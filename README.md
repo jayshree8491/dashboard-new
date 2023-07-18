@@ -8,7 +8,12 @@ The Web Warrior dashboard a responsive react app. It provides you with a collect
 ### Screenshot
 
 
-![image](https://user-images.githubusercontent.com/28312351/229280402-4732b02f-7b06-47b9-b1e1-60166f2ba75e.png)
+![image](![image](https://github.com/jayshree8491/dashboard-new/assets/119621789/9e7131de-fbf1-40de-bfe4-5bf44f73fad1)
+)
+
+![image](![image](![image](https://github.com/jayshree8491/dashboard-new/assets/119621789/90e69c17-09dd-4bd3-8241-640e1e8cb59f)
+)
+)
 
 ### Demo Site: [Here](https://dashboardhackathon.vercel.app/)
 
@@ -23,7 +28,7 @@ The Web Warrior dashboard a responsive react app. It provides you with a collect
 Clone the repository with the following command:
 
 ```bash
-git clone https://github.com/qamarali205/Dashboard.git
+git clone https://github.com/jayshree8491/dashboard-new.git
 ```
 
 
