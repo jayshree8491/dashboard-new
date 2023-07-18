@@ -7,13 +7,14 @@ The Web Warrior dashboard a responsive react app. It provides you with a collect
 # Preview
 ### Screenshot
 
+![image](https://github.com/jayshree8491/dashboard-new/assets/119621789/ae5fb025-ba6c-4484-8ac6-d1dff4f5c9e4)
 
-![image](![image](https://github.com/jayshree8491/dashboard-new/assets/119621789/9e7131de-fbf1-40de-bfe4-5bf44f73fad1)
-)
+![image](https://github.com/jayshree8491/dashboard-new/assets/119621789/622306ff-18a4-417b-b1d2-05fe649959ac)
 
-![image](![image](![image](https://github.com/jayshree8491/dashboard-new/assets/119621789/90e69c17-09dd-4bd3-8241-640e1e8cb59f)
-)
-)
+
+![image](https://github.com/jayshree8491/dashboard-new/assets/119621789/106c2e9a-cf53-4804-82fd-c69287bb2f90)
+
+
 
 ### Demo Site: [Here](https://dashboardhackathon.vercel.app/)
 
