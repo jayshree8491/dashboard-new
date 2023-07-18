@@ -16,7 +16,7 @@ The Web Warrior dashboard a responsive react app. It provides you with a collect
 
 
 
-### Demo Site: [Here](https://dashboardhackathon.vercel.app/)
+### Demo Site: [Here](https://dashboard-new-nine.vercel.app/)
 
 
 
