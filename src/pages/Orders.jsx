@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { app } from "../data/firebase.js";
+import "firebase/database";
 import { DialogComponent } from "@syncfusion/ej2-react-popups";
 import {
   GridComponent,
@@ -38,7 +40,7 @@ const Orders = () => {
   };
 
   const handleFormChange = (e) => {
-    const { name, value } = e.target;
+      const { name, value } = e.target;
     setOrderFormData((prevData) => ({
       ...prevData,
       [name]: value,
@@ -50,12 +52,31 @@ const Orders = () => {
     const newOrder = {
       OrderID: generateOrderId(),
       CustomerName: orderFormData.customerName,
-      ItemName: orderFormData.itemName,
-      Price: orderFormData.price,
-      Quantity: orderFormData.quantity,
+      TotalAmount: parseFloat(orderFormData.price),
+      OrderItems: orderFormData.itemName,
+      Location: "India",
+      Status: "pending",
+      StatusBg: "#FB9678",
+      ProductImage: "placeholder-image-url",
     };
 
+    // Update local state
     setData((prevData) => [newOrder, ...prevData]);
+
+    // Get a reference to the Firebase Realtime Database
+    const database = app.database();
+
+    // Add new order to the "orders" node in the database
+    const ordersRef = database.ref("orders");
+    ordersRef
+      .push(newOrder)
+      .then(() => {
+        console.log("New order added to Firebase database");
+      })
+      .catch((error) => {
+        console.error("Error adding order to Firebase database:", error);
+      });
+
     setIsDialogOpen(false);
     setOrderFormData({
       itemName: "",
